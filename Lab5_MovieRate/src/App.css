@@ -1,0 +1,160 @@
+body {
+  display: block;
+  margin: 0;
+  background: #14151a;
+  color: #eceef3;
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+#root {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.app {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 32px 16px 64px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 24px;
+}
+
+.card {
+  background: #1f212a;
+  border: 1px solid #2d3040;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.add-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input,
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #3a3e52;
+  background: #14151a;
+  color: inherit;
+  font: inherit;
+  resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid #f5b301;
+  outline-offset: 0;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.star-picker {
+  display: flex;
+  gap: 2px;
+}
+
+.star {
+  background: none;
+  border: none;
+  padding: 2px 4px;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  color: #8b90a5;
+}
+
+.star:hover {
+  transform: scale(1.2);
+}
+
+button.primary {
+  align-self: flex-start;
+  background: #f5b301;
+  color: #1a1a1a;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button.primary:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+button.danger {
+  background: transparent;
+  color: #ff6b6b;
+  border: 1px solid #ff6b6b;
+  border-radius: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+button.danger:hover {
+  background: #ff6b6b;
+  color: #14151a;
+}
+
+.movie-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.movie {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.movie-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.movie-header h2 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.stars-display {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.emoji-stars {
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+}
+
+.count {
+  color: #9aa0b8;
+  font-size: 0.9rem;
+}
+
+.empty {
+  text-align: center;
+  color: #9aa0b8;
+}
